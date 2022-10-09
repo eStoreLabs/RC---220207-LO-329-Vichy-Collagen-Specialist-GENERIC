@@ -74,7 +74,7 @@ body {
     }
     &__disc {
       @include text;
-      font-size: 9px;
+      font-size: 7.5px;
       text-align: center;
     }
     &__photo {
@@ -144,12 +144,18 @@ body {
     }
     &__desc {
       @include text;
-      font-size: 15px;
+      font-size: 16px;
       text-align: center;
       line-height: 1.4;
       strong {
         text-transform: uppercase;
       }
+    }
+    &__disclaimer {
+      @include text;
+      font-size: 7.5px;
+      text-align: center;
+      margin-top: 16px;
     }
     &__text {
       @include text;
@@ -180,7 +186,7 @@ body {
 
   .es-use {
     background: url('images/bg-1.jpg') no-repeat;
-    background-position: 29% bottom;
+    background-position: 18% bottom;
     min-height: 720px;
     padding: 0 16px;
     margin-bottom: 32px;
@@ -250,15 +256,26 @@ body {
       text-align: center;
       font-weight: 700;
       font-size: 12px;
+      font-weight: normal;
+      text-transform: uppercase;
       &--number {
-        font-size: 40px;
-        line-height: 1;
-      }
-      span {
         font-size: 30px;
         font-weight: 700;
         position: relative;
         top: -8px;
+        font-size: 40px;
+        line-height: 1;
+      }
+
+      &--word {
+        font-size: 14px;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      &--percent {
+        font-weight: normal;
+        font-size: 33px;
+        vertical-align: top;
       }
     }
     &__disclaimer {
@@ -292,6 +309,7 @@ body {
       }
     }
     &__image {
+      position: relative;
       margin-bottom: 24px;
     }
     &__img {
@@ -299,7 +317,31 @@ body {
     }
     &__text {
       @include text;
-      font-size: 14px;
+      font-size: 12.3px;
+      text-align: center;
+    }
+    &__disc {
+      @include text;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      font-size: 7.5px;
+      text-align: center;
+    }
+    &__label {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.66);
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-weight: 700;
       text-align: center;
     }
   }
@@ -467,7 +509,13 @@ body {
       min-height: 700px;
     }
     .es-benefits {
-      min-height: 600px;
+      min-height: 742px;
+    }
+
+    .es-cross {
+      &__packshot {
+        display: none;
+      }
     }
   }
 
@@ -481,7 +529,7 @@ body {
       }
     }
     .es-use {
-      background-position: center right;
+      // background-position: center right;
       margin-top: -180px;
       min-height: 608px;
       display: flex;
@@ -495,17 +543,18 @@ body {
       }
     }
     .es-banner {
-      background: url('images/bg-2.jpg') no-repeat center;
-      min-height: 326px;
+      background: url('images/bg-2.jpg') no-repeat right;
+      min-height: 450px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       margin-bottom: 100px;
       &__content {
-        max-width: 580px;
+        max-width: 480px;
         margin-bottom: 16px;
       }
       &__border {
-        margin-left: 100px;
+        margin-top: 100px;
+        // margin-left: 100px;
       }
       &__single {
         &:first-child {
@@ -555,11 +604,12 @@ body {
 
   @media screen and (min-width: 860px) {
     .es-benefits {
-      min-height: 502px;
+      min-height: 602px;
       display: flex;
       align-items: center;
       &__content {
         margin-left: 84px;
+        margin-top: -140px;
       }
     }
   }
