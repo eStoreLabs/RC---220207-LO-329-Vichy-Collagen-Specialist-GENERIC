@@ -406,7 +406,7 @@ body {
 #es-vichy.es-vichy .es-benefits {
   background: url("images/bg-3.jpg") no-repeat;
   background-position: right bottom;
-  min-height: 860px;
+  min-height: 1060px;
   padding: 0 16px;
 }
 #es-vichy.es-vichy .es-benefits__title {
@@ -719,7 +719,7 @@ body {
     margin-bottom: 0;
   }
   #es-vichy.es-vichy .es-ingr {
-    margin-bottom: 0;
+    margin-bottom: 64px;
   }
   #es-vichy.es-vichy .es-ingr__title {
     margin-bottom: 64px;
