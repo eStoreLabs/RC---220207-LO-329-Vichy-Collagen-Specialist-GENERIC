@@ -514,7 +514,9 @@ body {
 #es-vichy.es-vichy .es-cross__container {
   display: flex;
   flex-wrap: wrap;
+  flex-flow: column;
   justify-content: center;
+  align-items: center;
   padding: 0 8px;
   margin: 0 -16px;
 }
@@ -522,6 +524,10 @@ body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  max-height: 400px;
+}
+#es-vichy.es-vichy .es-cross__img--desktop {
+  max-height: none;
 }
 #es-vichy.es-vichy .es-cross__single {
   max-width: 250px;
@@ -589,6 +595,55 @@ body {
   color: #e03e2f;
   background: #fff;
 }
+#es-vichy.es-vichy .es-cross__photo--desktop {
+  display: none;
+}
+#es-vichy.es-vichy .es-cross__packshot {
+  position: relative;
+  z-index: 1;
+}
+#es-vichy.es-vichy .es-cross__packshot--1 {
+  max-width: 189px;
+}
+#es-vichy.es-vichy .es-cross__packshot--1::before {
+  position: absolute;
+  content: "1";
+  font-family: "Roboto";
+  color: #ebebeb;
+  font-size: 230px;
+  top: -50px;
+  left: -70px;
+  line-height: 1;
+  z-index: -1;
+}
+#es-vichy.es-vichy .es-cross__packshot--2 {
+  max-width: 175px;
+}
+#es-vichy.es-vichy .es-cross__packshot--2::before {
+  position: absolute;
+  content: "2";
+  font-family: "Roboto";
+  color: #ebebeb;
+  font-size: 230px;
+  top: -68px;
+  left: -60px;
+  line-height: 1;
+  z-index: -1;
+}
+#es-vichy.es-vichy .es-cross__packshot--3 {
+  max-width: 120px;
+}
+#es-vichy.es-vichy .es-cross__packshot--3::before {
+  position: absolute;
+  content: "3";
+  font-family: "Roboto";
+  color: #ebebeb;
+  font-size: 230px;
+  top: -50px;
+  left: -60px;
+  line-height: 1;
+  z-index: -1;
+}
 @media screen and (min-width: 560px) {
   #es-vichy.es-vichy .es-kv {
     display: flex;
@@ -610,6 +665,17 @@ body {
   }
   #es-vichy.es-vichy .es-benefits {
     min-height: 742px;
+  }
+  #es-vichy.es-vichy .es-cross__photo--desktop {
+    display: block;
+  }
+  #es-vichy.es-vichy .es-cross__packshot {
+    display: none;
+  }
+  #es-vichy.es-vichy .es-cross__container {
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: stretch;
   }
   #es-vichy.es-vichy .es-cross__packshot {
     display: none;
@@ -689,6 +755,9 @@ body {
   #es-vichy.es-vichy .es-rev-banner__single:first-child {
     margin-bottom: 0;
   }
+  #es-vichy.es-vichy .es-cross__container {
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 860px) {
   #es-vichy.es-vichy .es-benefits {
@@ -699,6 +768,9 @@ body {
   #es-vichy.es-vichy .es-benefits__content {
     margin-left: 84px;
     margin-top: -140px;
+  }
+  #es-vichy.es-vichy .es-cross__single:nth-child(3) {
+    margin-right: 90px;
   }
 }
 
