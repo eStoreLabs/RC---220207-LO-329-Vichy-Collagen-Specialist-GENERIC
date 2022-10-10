@@ -672,15 +672,16 @@ body {
     margin-bottom: 0;
   }
   #es-vichy.es-vichy .es-rev-banner {
-    background: url("images/bg-4.jpg") no-repeat center;
-    min-height: 350px;
+    background: url(images/bg-4.jpg) no-repeat 47%;
+    min-height: 474px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 100px;
   }
   #es-vichy.es-vichy .es-rev-banner__border {
     margin-right: 100px;
+    margin-bottom: 0;
   }
   #es-vichy.es-vichy .es-rev-banner__content {
     padding: 32px 54px;
